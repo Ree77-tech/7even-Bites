@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>7EVEN BITES</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf6f0; /* adjust to your preferred background color */
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    header img {
+      max-height: 80px;
+    }
+    .menu {
+      margin: 40px auto;
+      max-width: 600px;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .menu img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+    .price {
+      font-size: 24px;
+      color: #e74c3c;
+      margin: 10px 0;
+    }
+    form {
+      margin-top: 20px;
+    }
+    input, select, button {
+      padding: 10px;
+      margin: 5px;
+      width: 80%;
+      max-width: 400px;
+    }
+    button {
+      background-color: #e74c3c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+    }
+    button:hover {
+      background-color: #c0392b;
+    }
+    footer {
+      margin-top: 40px;
+      padding: 20px;
+      background-color: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="7EVEN BITES Logo">
+    <h1>7EVEN BITES</h1>
+    <p>REAL FOOD. REAL FLAVOR.</p>
+  </header>
+
+  <div class="menu">
+    <h2>Today's Special</h2>
+    <img src="menu-item.jpg" alt="Creamy Samp & Chicken Stew">
+    <p class="price">R60 Only</p>
+    <p>Add a side for R10</p>
+
+    <form action="https://formspree.io/f/maqpweke" method="POST">
+      <input type="text" name="customer_name" placeholder="Your Name" required>
+      <input type="text" name="room_number" placeholder="Room Number" required>
+      <select name="menu_choice">
+        <option value="Creamy Samp & Chicken Stew">Creamy Samp & Chicken Stew</option>
+      </select>
+      <select name="addon">
+        <option value="None">No Add-on</option>
+        <option value="Chakalaka">Chakalaka (+R10)</option>
+      </select>
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>Contact: 0846789019</p>
+  </footer>
+</body>
+</html>
